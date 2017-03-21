@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kuharica</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="string_title_upload_progressbar_">Uploading.. Wait for a while...</string>
+    <string-array name="category">
+        <item> Predjelo </item>
+        <item> Salata </item>
+        <item> Glavno jelo </item>
+        <item> Desert </item>
+    </string-array>
+</resources>

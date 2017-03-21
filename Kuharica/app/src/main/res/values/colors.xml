@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3f5960</color>
+    <color name="colorPrimaryDark">#008eb4</color>
+    <color name="pozadina">#333333</color>
+    <color name="menu">#584b4d</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="selected_item_color">#30d1d5</color>
+    <color name="autocomplete">#5D4037</color>
+    <color name="navigation">#A1887F</color>
+    <color name="transparent">#00ffffff</color>
+
+</resources>

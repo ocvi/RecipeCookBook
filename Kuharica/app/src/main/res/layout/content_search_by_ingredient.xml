@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutTeste"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity"
+    android:background="@drawable/pozadina_recipe_ingredient">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp">
+
+        <com.example.kajza.kuharica.Font.ProbaFont
+            android:text="Pretraži recepte po sastojcima"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp">
+        <com.example.kajza.kuharica.Font.ProbaFont
+
+            android:id="@+id/textView1"
+            android:layout_width="95dp"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/gumbAdd"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/gumbAdd"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="Unesi do 3 sastojka!"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <ImageButton android:id="@+id/gumbAdd"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="btnAdd"
+            android:src="@android:drawable/ic_input_add"
+            android:background="@android:color/transparent"
+            android:layout_width="50dp" />
+    </RelativeLayout>
+
+    <ScrollView android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="275dp">
+        <LinearLayout android:id="@+id/linearLayoutForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dddd2"
+            android:id="@+id/trazi_btn"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center_vertical|fill_vertical|center_horizontal|center"
+            android:elevation="0dp"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadina_recipe_ingredient"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/tools">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@android:color/transparent">
+
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/my_image"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                fresco:placeholderImage="@drawable/cupcake33"
+                fresco:failureImage="@drawable/ic_error"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="15dp" />
+
+            <com.example.kajza.kuharica.Font.ProbaFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/recipeName"
+                android:layout_below="@+id/my_image"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textSize="30dp"/>
+            <com.example.kajza.kuharica.Font.ProbaFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/recipeDescription"
+                android:layout_below="@+id/recipeName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp"/>
+            <com.example.kajza.kuharica.Font.ProbaFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/recipeAmount"
+                android:layout_below="@+id/recipeDescription"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:textColor="#ffffff" />
+            <com.example.kajza.kuharica.Font.ProbaFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/recipeInstructions"
+                android:layout_below="@+id/recipeAmount"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:lineSpacingExtra="10dp"/>
+
+            <com.example.kajza.kuharica.Font.ProbaFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/recipeMeasure"
+                android:layout_toRightOf="@+id/recipeAmount"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+
+            <com.example.kajza.kuharica.Font.ProbaFont
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/recipeIngredient"
+                android:layout_toRightOf="@+id/recipeMeasure"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:textSize="17dp"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
